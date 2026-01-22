@@ -199,10 +199,12 @@ async function updateMonthlyTracking(workbook, exportDate) {
   if (!monthlySheet) {
     console.warn('⚠️ Feuille "Suivi Mensuel" introuvable, création...');
     monthlySheet = workbook.addWorksheet('Suivi Mensuel');
+  } else {
+    // Recréer la feuille proprement
+    const index = workbook.worksheets.indexOf(monthlySheet);
+    workbook.removeWorksheet(monthlySheet.id);
+    monthlySheet = workbook.addWorksheet('Suivi Mensuel');
   }
-
-  // Nettoyer la feuille
-  clearWorksheet(monthlySheet);
 
   // Récupérer les headers
   const headers = getHeaders(stockSheet);
@@ -244,9 +246,12 @@ async function updateSemestrialTracking(workbook, exportDate) {
   if (!semestrialSheet) {
     console.warn('⚠️ Feuille "Suivi Semestriel" introuvable, création...');
     semestrialSheet = workbook.addWorksheet('Suivi Semestriel');
+  } else {
+    // Recréer la feuille proprement
+    const index = workbook.worksheets.indexOf(semestrialSheet);
+    workbook.removeWorksheet(semestrialSheet.id);
+    semestrialSheet = workbook.addWorksheet('Suivi Semestriel');
   }
-
-  clearWorksheet(semestrialSheet);
 
   const headers = getHeaders(stockSheet);
   const currentIndex = headers.indexOf(exportDate);
@@ -427,10 +432,13 @@ function styleHeaderCell(cell) {
 }
 
 function clearWorksheet(sheet) {
-  const rowCount = sheet.rowCount;
-  if (rowCount > 0) {
-    sheet.spliceRows(1, rowCount);
-  }
+  // Supprimer la feuille et la recréer (plus propre)
+  const workbook = sheet.workbook;
+  const sheetName = sheet.name;
+  const index = workbook.worksheets.indexOf(sheet);
+  
+  workbook.removeWorksheet(sheet.id);
+  return workbook.addWorksheet(sheetName, { views: [{}] }, index);
 }
 
 function adjustColumnWidths(sheet) {
