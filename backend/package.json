@@ -4,7 +4,7 @@
   "description": "Backend Node.js pour traitement de fichiers Excel",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node --max-old-space-size=450 server.js",
     "dev": "nodemon server.js",
     "test": "echo \"No tests yet\" && exit 0"
   },
