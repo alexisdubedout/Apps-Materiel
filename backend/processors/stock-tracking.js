@@ -1,6 +1,6 @@
 // ===================================
 // 📊 Stock Tracking Processor
-// Version Node.js avec ExcelJS - Optimisé
+// Version Node.js avec ExcelJS - Optimisé pour mémoire limitée
 // ===================================
 
 const ExcelJS = require('exceljs');
@@ -20,6 +20,11 @@ async function processStockTracking(trackingPath, exportPath, exportDateStr) {
   console.log('📁 Fichier tracking:', trackingPath);
   console.log('📁 Fichier export:', exportPath);
   console.log('📅 Date brute:', exportDateStr);
+
+  // Forcer le garbage collector si disponible
+  if (global.gc) {
+    global.gc();
+  }
 
   // Parser la date (accepter les deux formats)
   const exportDate = parseDate(exportDateStr);
@@ -41,10 +46,24 @@ async function processStockTracking(trackingPath, exportPath, exportDateStr) {
     await updateTracking(trackingWb, exportWb, exportDateFormatted);
     console.log('✅ Update tracking terminé');
 
+    // Libérer la mémoire du workbook export
+    exportWb.worksheets.forEach(sheet => {
+      sheet.destroy && sheet.destroy();
+    });
+
+    // Forcer le garbage collector
+    if (global.gc) {
+      global.gc();
+    }
+
     // Étape 2: Mise à jour suivi mensuel
     console.log('📊 Étape 2/3: Update monthly tracking...');
     await updateMonthlyTracking(trackingWb, exportDateFormatted);
     console.log('✅ Update monthly tracking terminé');
+
+    if (global.gc) {
+      global.gc();
+    }
 
     // Étape 3: Mise à jour suivi semestriel
     console.log('📊 Étape 3/3: Update semestrial tracking...');
@@ -52,6 +71,7 @@ async function processStockTracking(trackingPath, exportPath, exportDateStr) {
     console.log('✅ Update semestrial tracking terminé');
 
     // Sauvegarder UNE SEULE FOIS
+    console.log('💾 Sauvegarde du fichier...');
     await trackingWb.xlsx.writeFile(trackingPath);
     console.log('💾 Fichier sauvegardé');
 
@@ -68,7 +88,7 @@ async function processStockTracking(trackingPath, exportPath, exportDateStr) {
 }
 
 // ===================================
-// ÉTAPE 1: UPDATE TRACKING
+// ÉTAPE 1: UPDATE TRACKING - OPTIMISÉ
 // ===================================
 
 async function updateTracking(trackingWb, exportWb, exportDate) {
@@ -126,24 +146,45 @@ async function updateTracking(trackingWb, exportWb, exportDate) {
 
   console.log(`✏️ ${updatedRows} lignes mises à jour`);
 
-  // Ajouter les nouvelles lignes
-  let newRows = 0;
+  // Ajouter les nouvelles lignes PAR LOTS (OPTIMISATION)
+  const newRowsToAdd = [];
   exportData.forEach((data, key) => {
     if (!existingKeys.has(key)) {
-      const newRow = stockSheet.addRow([
-        data.codeArticle,
-        data.description,
-        data.emplacement,
-        data.descEmplacement
-      ]);
-      newRow.getCell(newColIndex).value = data.quantite;
-      newRows++;
+      newRowsToAdd.push({ data, key, newColIndex });
     }
   });
 
-  console.log(`➕ ${newRows} nouvelles lignes ajoutées`);
+  console.log(`➕ Ajout de ${newRowsToAdd.length} nouvelles lignes par lots...`);
+
+  const BATCH_SIZE = 1000;
+  let totalAdded = 0;
+
+  for (let i = 0; i < newRowsToAdd.length; i += BATCH_SIZE) {
+    const batch = newRowsToAdd.slice(i, i + BATCH_SIZE);
+    
+    batch.forEach(item => {
+      const newRow = stockSheet.addRow([
+        item.data.codeArticle,
+        item.data.description,
+        item.data.emplacement,
+        item.data.descEmplacement
+      ]);
+      newRow.getCell(item.newColIndex).value = item.data.quantite;
+    });
+
+    totalAdded += batch.length;
+    console.log(`  ✓ ${totalAdded}/${newRowsToAdd.length} lignes ajoutées...`);
+
+    // Forcer le garbage collector tous les 5000 lignes
+    if (totalAdded % 5000 === 0 && global.gc) {
+      global.gc();
+    }
+  }
+
+  console.log(`➕ ${totalAdded} nouvelles lignes ajoutées au total`);
 
   // Ajuster les largeurs de colonnes
+  console.log('📐 Ajustement des colonnes...');
   adjustColumnWidths(stockSheet);
 }
 
