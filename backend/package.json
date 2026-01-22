@@ -28,4 +28,8 @@
   "engines": {
     "node": ">=18.0.0"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 3306aa8 (Init frontend with Vite + React)
