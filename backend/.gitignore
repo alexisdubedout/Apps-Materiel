@@ -1,0 +1,9 @@
+node_modules/
+uploads/*.xlsx
+uploads/*.xls
+!uploads/.gitkeep
+*.log
+.env
+.env.local
+.DS_Store
+Thumbs.db

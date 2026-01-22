@@ -1,0 +1,465 @@
+// ===================================
+// 📊 Stock Tracking Processor
+// Version Node.js avec ExcelJS - Optimisé
+// ===================================
+
+const ExcelJS = require('exceljs');
+const path = require('path');
+
+/**
+ * Traite le suivi des stocks
+ * @param {string} trackingPath - Chemin du fichier de suivi
+ * @param {string} exportPath - Chemin du fichier d'export
+ * @param {string} exportDateStr - Date au format 'YYYY-MM-DD' ou 'DD/MM/YYYY'
+ * @returns {Promise<string>} - Chemin du fichier traité
+ */
+async function processStockTracking(trackingPath, exportPath, exportDateStr) {
+  console.log('═══════════════════════════════════════════════════');
+  console.log('🚀 DÉBUT DU TRAITEMENT STOCK TRACKING');
+  console.log('═══════════════════════════════════════════════════');
+  console.log('📁 Fichier tracking:', trackingPath);
+  console.log('📁 Fichier export:', exportPath);
+  console.log('📅 Date brute:', exportDateStr);
+
+  // Parser la date (accepter les deux formats)
+  const exportDate = parseDate(exportDateStr);
+  const exportDateFormatted = formatDate(exportDate, 'DD/MM/YYYY');
+  console.log('✅ Date formatée:', exportDateFormatted);
+
+  // Charger les deux workbooks UNE SEULE FOIS
+  const trackingWb = new ExcelJS.Workbook();
+  const exportWb = new ExcelJS.Workbook();
+  
+  await trackingWb.xlsx.readFile(trackingPath);
+  await exportWb.xlsx.readFile(exportPath);
+  
+  console.log('📖 Workbooks chargés en mémoire');
+
+  try {
+    // Étape 1: Mise à jour du tracking principal
+    console.log('📊 Étape 1/3: Update tracking...');
+    await updateTracking(trackingWb, exportWb, exportDateFormatted);
+    console.log('✅ Update tracking terminé');
+
+    // Étape 2: Mise à jour suivi mensuel
+    console.log('📊 Étape 2/3: Update monthly tracking...');
+    await updateMonthlyTracking(trackingWb, exportDateFormatted);
+    console.log('✅ Update monthly tracking terminé');
+
+    // Étape 3: Mise à jour suivi semestriel
+    console.log('📊 Étape 3/3: Update semestrial tracking...');
+    await updateSemestrialTracking(trackingWb, exportDateFormatted);
+    console.log('✅ Update semestrial tracking terminé');
+
+    // Sauvegarder UNE SEULE FOIS
+    await trackingWb.xlsx.writeFile(trackingPath);
+    console.log('💾 Fichier sauvegardé');
+
+    console.log('═══════════════════════════════════════════════════');
+    console.log('🎉 TRAITEMENT TERMINÉ AVEC SUCCÈS');
+    console.log('═══════════════════════════════════════════════════');
+
+    return trackingPath;
+
+  } catch (error) {
+    console.error('❌ ERREUR:', error);
+    throw error;
+  }
+}
+
+// ===================================
+// ÉTAPE 1: UPDATE TRACKING
+// ===================================
+
+async function updateTracking(trackingWb, exportWb, exportDate) {
+  const stockSheet = trackingWb.getWorksheet('Liste de Stock');
+  const exportSheet = exportWb.worksheets[0];
+
+  if (!stockSheet) {
+    throw new Error('Feuille "Liste de Stock" introuvable');
+  }
+
+  // Vérifier si la date existe déjà
+  const headerRow = stockSheet.getRow(1);
+  let dateColIndex = null;
+  
+  headerRow.eachCell((cell, colNum) => {
+    if (cell.value === exportDate) {
+      dateColIndex = colNum;
+    }
+  });
+
+  if (dateColIndex) {
+    throw new Error(`Les données pour la date ${exportDate} ont déjà été importées`);
+  }
+
+  // Extraire et regrouper les données d'export
+  const exportData = extractExportData(exportSheet);
+  console.log(`📦 ${exportData.size} articles uniques dans l'export`);
+
+  // Ajouter la nouvelle colonne de date
+  const newColIndex = headerRow.cellCount + 1;
+  const newColCell = headerRow.getCell(newColIndex);
+  newColCell.value = exportDate;
+  styleHeaderCell(newColCell);
+
+  // Mettre à jour les lignes existantes
+  let updatedRows = 0;
+  const existingKeys = new Set();
+
+  stockSheet.eachRow((row, rowNum) => {
+    if (rowNum === 1) return; // Skip header
+
+    const codif = row.getCell(1).value;
+    const magasin = row.getCell(3).value;
+    const key = `${codif}|${magasin}`;
+    
+    existingKeys.add(key);
+
+    if (exportData.has(key)) {
+      row.getCell(newColIndex).value = exportData.get(key).quantite;
+      updatedRows++;
+    } else {
+      row.getCell(newColIndex).value = 0;
+    }
+  });
+
+  console.log(`✏️ ${updatedRows} lignes mises à jour`);
+
+  // Ajouter les nouvelles lignes
+  let newRows = 0;
+  exportData.forEach((data, key) => {
+    if (!existingKeys.has(key)) {
+      const newRow = stockSheet.addRow([
+        data.codeArticle,
+        data.description,
+        data.emplacement,
+        data.descEmplacement
+      ]);
+      newRow.getCell(newColIndex).value = data.quantite;
+      newRows++;
+    }
+  });
+
+  console.log(`➕ ${newRows} nouvelles lignes ajoutées`);
+
+  // Ajuster les largeurs de colonnes
+  adjustColumnWidths(stockSheet);
+}
+
+// ===================================
+// ÉTAPE 2: UPDATE MONTHLY TRACKING
+// ===================================
+
+async function updateMonthlyTracking(workbook, exportDate) {
+  const stockSheet = workbook.getWorksheet('Liste de Stock');
+  let monthlySheet = findSheetByPrefix(workbook, 'suivi mensuel');
+
+  if (!monthlySheet) {
+    console.warn('⚠️ Feuille "Suivi Mensuel" introuvable, création...');
+    monthlySheet = workbook.addWorksheet('Suivi Mensuel');
+  }
+
+  // Nettoyer la feuille
+  clearWorksheet(monthlySheet);
+
+  // Récupérer les headers
+  const headers = getHeaders(stockSheet);
+  const currentIndex = headers.indexOf(exportDate);
+
+  if (currentIndex < 1) {
+    addNoDataMessage(monthlySheet, 'Pas de données disponibles pour le mois', exportDate);
+    return;
+  }
+
+  const previousDate = headers[currentIndex - 1];
+
+  // Vérifier que c'est une date valide
+  if (!isValidDate(previousDate)) {
+    addNoDataMessage(monthlySheet, 'Pas de données disponibles pour le mois', exportDate);
+    return;
+  }
+
+  // Calculer les variations
+  const variations = calculateVariations(stockSheet, currentIndex + 1, currentIndex);
+
+  // Écrire les résultats
+  writeVariationsSheet(
+    monthlySheet,
+    variations,
+    `Variation entre le ${previousDate} et le ${exportDate}`,
+    ['Codification DSNA', 'Désignation', 'Magasin', 'Description', 'Variation', 'Quantité actuelle']
+  );
+}
+
+// ===================================
+// ÉTAPE 3: UPDATE SEMESTRIAL TRACKING
+// ===================================
+
+async function updateSemestrialTracking(workbook, exportDate) {
+  const stockSheet = workbook.getWorksheet('Liste de Stock');
+  let semestrialSheet = findSheetByPrefix(workbook, 'suivi semestriel');
+
+  if (!semestrialSheet) {
+    console.warn('⚠️ Feuille "Suivi Semestriel" introuvable, création...');
+    semestrialSheet = workbook.addWorksheet('Suivi Semestriel');
+  }
+
+  clearWorksheet(semestrialSheet);
+
+  const headers = getHeaders(stockSheet);
+  const currentIndex = headers.indexOf(exportDate);
+
+  if (currentIndex < 6) {
+    addNoDataMessage(semestrialSheet, 'Pas de données disponibles pour le semestre', exportDate);
+    return;
+  }
+
+  const previousDate = headers[currentIndex - 6];
+
+  if (!isValidDate(previousDate)) {
+    addNoDataMessage(semestrialSheet, 'Pas de données disponibles pour le semestre', exportDate);
+    return;
+  }
+
+  const variations = calculateVariations(stockSheet, currentIndex + 1, currentIndex - 5);
+
+  writeVariationsSheet(
+    semestrialSheet,
+    variations,
+    `Variation entre le ${previousDate} et le ${exportDate}`,
+    ['Codification DSNA', 'Désignation', 'Magasin', 'Description', 'Variation', 'Quantité actuelle']
+  );
+}
+
+// ===================================
+// FONCTIONS UTILITAIRES
+// ===================================
+
+function extractExportData(exportSheet) {
+  const data = new Map();
+  
+  exportSheet.eachRow((row, rowNum) => {
+    if (rowNum === 1) return; // Skip header
+
+    const codeArticle = getCellValue(row, 1);
+    const emplacement = getCellValue(row, 2);
+    const description = getCellValue(row, 3);
+    const descEmplacement = getCellValue(row, 4);
+
+    if (!codeArticle || !emplacement) return;
+
+    const key = `${codeArticle}|${emplacement}`;
+
+    if (!data.has(key)) {
+      data.set(key, {
+        codeArticle,
+        emplacement,
+        description: description || '',
+        descEmplacement: descEmplacement || '',
+        quantite: 0
+      });
+    }
+
+    data.get(key).quantite++;
+  });
+
+  return data;
+}
+
+function calculateVariations(stockSheet, currentColIndex, previousColIndex) {
+  const variations = [];
+
+  stockSheet.eachRow((row, rowNum) => {
+    if (rowNum === 1) return; // Skip header
+
+    const currentQty = getCellValue(row, currentColIndex) || 0;
+    const previousQty = getCellValue(row, previousColIndex) || 0;
+    const variation = currentQty - previousQty;
+
+    if (variation !== 0) {
+      variations.push({
+        codif: getCellValue(row, 1),
+        designation: getCellValue(row, 2),
+        magasin: getCellValue(row, 3),
+        description: getCellValue(row, 4),
+        variation,
+        qtyActuelle: currentQty
+      });
+    }
+  });
+
+  return variations;
+}
+
+function writeVariationsSheet(sheet, variations, title, headers) {
+  // Titre
+  sheet.mergeCells('A1:F1');
+  const titleCell = sheet.getCell('A1');
+  titleCell.value = title;
+  titleCell.alignment = { horizontal: 'center' };
+  titleCell.fill = {
+    type: 'pattern',
+    pattern: 'solid',
+    fgColor: { argb: 'FFD3D3D3' }
+  };
+
+  // Headers
+  const headerRow = sheet.getRow(2);
+  headers.forEach((header, i) => {
+    const cell = headerRow.getCell(i + 1);
+    cell.value = header;
+    styleHeaderCell(cell);
+  });
+
+  // Données
+  if (variations.length > 0) {
+    variations.forEach((item, i) => {
+      const row = sheet.getRow(i + 3);
+      row.getCell(1).value = item.codif;
+      row.getCell(2).value = item.designation;
+      row.getCell(3).value = item.magasin;
+      row.getCell(4).value = item.description;
+      row.getCell(5).value = item.variation;
+      row.getCell(6).value = item.qtyActuelle;
+
+      // Coloration selon quantité
+      const qtyCell = row.getCell(6);
+      if (item.qtyActuelle <= 5) {
+        qtyCell.fill = {
+          type: 'pattern',
+          pattern: 'solid',
+          fgColor: { argb: 'FFFFCCCC' }
+        };
+      } else if (item.qtyActuelle <= 10) {
+        qtyCell.fill = {
+          type: 'pattern',
+          pattern: 'solid',
+          fgColor: { argb: 'FFFFDAB9' }
+        };
+      }
+    });
+  } else {
+    sheet.mergeCells('A3:F3');
+    const cell = sheet.getCell('A3');
+    cell.value = 'Aucune variation pour cette période';
+    cell.alignment = { horizontal: 'center' };
+    cell.fill = {
+      type: 'pattern',
+      pattern: 'solid',
+      fgColor: { argb: 'FFD3D3D3' }
+    };
+  }
+
+  adjustColumnWidths(sheet);
+}
+
+function addNoDataMessage(sheet, message, dateContext) {
+  sheet.mergeCells('A1:F1');
+  const cell = sheet.getCell('A1');
+  cell.value = message;
+  cell.alignment = { horizontal: 'center' };
+  cell.fill = {
+    type: 'pattern',
+    pattern: 'solid',
+    fgColor: { argb: 'FFD3D3D3' }
+  };
+}
+
+function styleHeaderCell(cell) {
+  cell.fill = {
+    type: 'pattern',
+    pattern: 'solid',
+    fgColor: { argb: 'FF003366' }
+  };
+  cell.font = {
+    color: { argb: 'FFFFFFFF' },
+    bold: true
+  };
+  cell.alignment = { horizontal: 'center' };
+  cell.border = {
+    top: { style: 'thin', color: { argb: 'FFFFFFFF' } },
+    left: { style: 'thin', color: { argb: 'FFFFFFFF' } },
+    bottom: { style: 'thin', color: { argb: 'FFFFFFFF' } },
+    right: { style: 'thin', color: { argb: 'FFFFFFFF' } }
+  };
+}
+
+function clearWorksheet(sheet) {
+  const rowCount = sheet.rowCount;
+  if (rowCount > 0) {
+    sheet.spliceRows(1, rowCount);
+  }
+}
+
+function adjustColumnWidths(sheet) {
+  sheet.columns.forEach(column => {
+    let maxLength = 10;
+    column.eachCell({ includeEmpty: false }, cell => {
+      const length = cell.value ? cell.value.toString().length : 10;
+      if (length > maxLength) {
+        maxLength = length;
+      }
+    });
+    column.width = Math.min(maxLength + 2, 50);
+  });
+}
+
+function getHeaders(sheet) {
+  const headers = [];
+  const headerRow = sheet.getRow(1);
+  headerRow.eachCell(cell => {
+    headers.push(cell.value);
+  });
+  return headers;
+}
+
+function findSheetByPrefix(workbook, prefix) {
+  const lowerPrefix = prefix.toLowerCase();
+  return workbook.worksheets.find(sheet => 
+    sheet.name.toLowerCase().startsWith(lowerPrefix)
+  );
+}
+
+function getCellValue(row, colIndex) {
+  const cell = row.getCell(colIndex);
+  return cell.value;
+}
+
+function parseDate(dateStr) {
+  // Essayer format ISO (YYYY-MM-DD)
+  let match = dateStr.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (match) {
+    return new Date(match[1], match[2] - 1, match[3]);
+  }
+
+  // Essayer format FR (DD/MM/YYYY)
+  match = dateStr.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+  if (match) {
+    return new Date(match[3], match[2] - 1, match[1]);
+  }
+
+  throw new Error(`Format de date invalide: ${dateStr}. Utilisez DD/MM/YYYY ou YYYY-MM-DD`);
+}
+
+function formatDate(date, format) {
+  const day = String(date.getDate()).padStart(2, '0');
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const year = date.getFullYear();
+
+  if (format === 'DD/MM/YYYY') {
+    return `${day}/${month}/${year}`;
+  }
+  return `${year}-${month}-${day}`;
+}
+
+function isValidDate(dateStr) {
+  try {
+    parseDate(dateStr);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+module.exports = { processStockTracking };
