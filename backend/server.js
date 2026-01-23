@@ -153,6 +153,7 @@ app.post('/api/process/:treatmentId', upload.any(), async (req, res) => {
     const resultFilename = `resultat_stock_tracking_${params.export_date.replace(/\//g, '-')}.xlsx`;
 
     // Envoyer le fichier
+    res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
     res.download(outputPath, resultFilename, async (err) => {
       // Nettoyer les fichiers temporaires après envoi
       try {
