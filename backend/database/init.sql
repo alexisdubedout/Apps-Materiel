@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS users (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  redmine_id INTEGER UNIQUE NOT NULL,
+  login TEXT UNIQUE NOT NULL,
+  email TEXT,
+  firstname TEXT,
+  lastname TEXT,
+  last_login DATETIME,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);

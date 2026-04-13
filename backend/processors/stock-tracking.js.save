@@ -5,83 +5,20 @@
 
 const ExcelJS = require('exceljs');
 const path = require('path');
-const XLSX = require('xlsx');
-const fs = require('fs');
-
 /**
  * Traite le suivi des stocks
  * @param {string} trackingPath - Chemin du fichier de suivi
  * @param {string} exportPath - Chemin du fichier d'export
  * @param {string} exportDateStr - Date au format 'YYYY-MM-DD' ou 'DD/MM/YYYY'
  * @returns {Promise<string>} - Chemin du fichier traité
- * 
- * 
  */
-
-/**
- * Convertit un fichier .xls en .xlsx
- * @param {string} xlsPath - Chemin du fichier .xls
- * @returns {string} - Chemin du fichier .xlsx créé
- */
-function convertXlsToXlsx(xlsPath) {
-  console.log('🔄 Conversion XLS → XLSX...');
-  console.log('   Input:', xlsPath);
-  
-  const workbook = XLSX.readFile(xlsPath, { type: 'binary' });
-  const xlsxPath = xlsPath.replace(/\.xls$/i, '.xlsx');
-  
-  console.log('   Output:', xlsxPath);
-  XLSX.writeFile(workbook, xlsxPath, { bookType: 'xlsx' });
-  
-  // Vérifier que le fichier existe bien
-  if (!fs.existsSync(xlsxPath)) {
-    throw new Error(`Échec de la conversion: ${xlsxPath} n'existe pas`);
-  }
-  
-  console.log('✅ Conversion terminée:', xlsxPath);
-  return xlsxPath;
-}
 async function processStockTracking(trackingPath, exportPath, exportDateStr) {
   console.log('═══════════════════════════════════════════════════');
   console.log('🚀 DÉBUT DU TRAITEMENT STOCK TRACKING');
   console.log('═══════════════════════════════════════════════════');
-  
-  // DEBUG: Vérifier le contenu des fichiers
-  const trackingBuffer = fs.readFileSync(trackingPath);
-  const exportBuffer = fs.readFileSync(exportPath);
-  
-  console.log('🔍 DEBUG Tracking:', {
-    path: trackingPath,
-    firstBytes: [trackingBuffer[0], trackingBuffer[1]],
-    isXLS: trackingBuffer[0] === 0xD0 && trackingBuffer[1] === 0xCF
-  });
-  
-  console.log('🔍 DEBUG Export:', {
-    path: exportPath,
-    firstBytes: [exportBuffer[0], exportBuffer[1]],
-    isXLS: exportBuffer[0] === 0xD0 && exportBuffer[1] === 0xCF
-  });
-  
-  function isXlsFile(buffer) {
-    return buffer[0] === 0xD0 && buffer[1] === 0xCF;
-  }
-
-  function isXmlFile(buffer) {
-    return buffer[0] === 0x3C && buffer[1] === 0x3F; // <?
-  }
-
-  // Dans processStockTracking, remplace le bloc de conversion par :
-  if (isXmlFile(exportBuffer) || isXlsFile(exportBuffer)) {
-    console.log('🔄 Conversion export vers XLSX');
-    exportPath = convertXlsToXlsx(exportPath);
-  }
-  if (isXmlFile(trackingBuffer) || isXlsFile(trackingBuffer)) {
-    console.log('🔄 Conversion tracking vers XLSX');
-    trackingPath = convertXlsToXlsx(trackingPath);
-  }
-  
   console.log('📁 Fichier tracking:', trackingPath);
   console.log('📁 Fichier export:', exportPath);
+  console.log('📅 Date brute:', exportDateStr);
 
   // Forcer le garbage collector si disponible
   if (global.gc) {
@@ -132,18 +69,16 @@ async function processStockTracking(trackingPath, exportPath, exportDateStr) {
     await updateSemestrialTracking(trackingWb, exportDateFormatted);
     console.log('✅ Update semestrial tracking terminé');
 
-    // Créer un fichier de sortie distinct avec la bonne extension
-    const outputPath = trackingPath.replace(/\.[^.]+$/, '') + '_processed.xlsx';
-    
+    // Sauvegarder UNE SEULE FOIS
     console.log('💾 Sauvegarde du fichier...');
-    await trackingWb.xlsx.writeFile(outputPath);
-    console.log('💾 Fichier sauvegardé:', outputPath);
+    await trackingWb.xlsx.writeFile(trackingPath);
+    console.log('💾 Fichier sauvegardé');
 
     console.log('═══════════════════════════════════════════════════');
     console.log('🎉 TRAITEMENT TERMINÉ AVEC SUCCÈS');
     console.log('═══════════════════════════════════════════════════');
 
-    return outputPath;
+    return trackingPath;
 
   } catch (error) {
     console.error('❌ ERREUR:', error);
@@ -196,8 +131,7 @@ async function updateTracking(trackingWb, exportWb, exportDate) {
 
     const codif = row.getCell(1).value;
     const magasin = row.getCell(3).value;
-    const produit = row.getCell(5).value || '';
-    const key = `${codif}|${magasin}|${produit}`;
+    const key = `${codif}|${magasin}`;
     
     existingKeys.add(key);
 
@@ -232,8 +166,7 @@ async function updateTracking(trackingWb, exportWb, exportDate) {
         item.data.codeArticle,
         item.data.description,
         item.data.emplacement,
-        item.data.descEmplacement,
-        item.data.produit
+        item.data.descEmplacement
       ]);
       newRow.getCell(item.newColIndex).value = item.data.quantite;
     });
@@ -297,7 +230,7 @@ async function updateMonthlyTracking(workbook, exportDate) {
     monthlySheet,
     variations,
     `Variation entre le ${previousDate} et le ${exportDate}`,
-    ['Codification DSNA', 'Désignation', 'Magasin', 'Description', 'Produit', 'Variation', 'Quantité actuelle']
+    ['Codification DSNA', 'Désignation', 'Magasin', 'Description', 'Variation', 'Quantité actuelle']
   );
 }
 
@@ -340,7 +273,7 @@ async function updateSemestrialTracking(workbook, exportDate) {
     semestrialSheet,
     variations,
     `Variation entre le ${previousDate} et le ${exportDate}`,
-    ['Codification DSNA', 'Désignation', 'Magasin', 'Description', 'Produit', 'Variation', 'Quantité actuelle']
+    ['Codification DSNA', 'Désignation', 'Magasin', 'Description', 'Variation', 'Quantité actuelle']
   );
 }
 
@@ -351,29 +284,17 @@ async function updateSemestrialTracking(workbook, exportDate) {
 function extractExportData(exportSheet) {
   const data = new Map();
   
-  // Trouver la dernière ligne avec des données
-  let lastRowWithData = 0;
   exportSheet.eachRow((row, rowNum) => {
-    if (getCellValue(row, 2) || getCellValue(row, 4)) { // Si emplacement OU code article
-      lastRowWithData = rowNum;
-    }
-  });
-  
-  // Traiter les données
-  exportSheet.eachRow((row, rowNum) => {
-    if (rowNum <= 3) return; // Skip header (lignes 1-2)
-    if (rowNum === lastRowWithData) return; // Skip dernière ligne avec données
-    
-    const emplacement = getCellValue(row, 2);        // Colonne B
-    const codeArticle = getCellValue(row, 4);        // Colonne D
-    const description = getCellValue(row, 6);        // Colonne F
-    const descEmplacement = getCellValue(row, 3);    // Colonne C
-    const produit = getCellValue(row, 10) || '';      // Colonne J
-    const quantite = getCellValue(row, 11) || 1;     // Colonne K
+    if (rowNum === 1) return; // Skip header
+
+    const codeArticle = getCellValue(row, 1);
+    const emplacement = getCellValue(row, 2);
+    const description = getCellValue(row, 3);
+    const descEmplacement = getCellValue(row, 4);
 
     if (!codeArticle || !emplacement) return;
 
-    const key = `${codeArticle}|${emplacement}|${produit}`;
+    const key = `${codeArticle}|${emplacement}`;
 
     if (!data.has(key)) {
       data.set(key, {
@@ -381,13 +302,11 @@ function extractExportData(exportSheet) {
         emplacement,
         description: description || '',
         descEmplacement: descEmplacement || '',
-        produit: produit || '',
         quantite: 0
       });
     }
 
-    // Additionner la quantité au lieu de compter les lignes
-    data.get(key).quantite += Number(quantite) || 1;
+    data.get(key).quantite++;
   });
 
   return data;
@@ -409,7 +328,6 @@ function calculateVariations(stockSheet, currentColIndex, previousColIndex) {
         designation: getCellValue(row, 2),
         magasin: getCellValue(row, 3),
         description: getCellValue(row, 4),
-        produit: getCellValue(row, 5) || '',
         variation,
         qtyActuelle: currentQty
       });
@@ -420,11 +338,8 @@ function calculateVariations(stockSheet, currentColIndex, previousColIndex) {
 }
 
 function writeVariationsSheet(sheet, variations, title, headers) {
-  const colCount = headers.length;
-  const lastCol = String.fromCharCode(64 + colCount); // 7 → 'G'
-
   // Titre
-  sheet.mergeCells(`A1:${lastCol}1`);
+  sheet.mergeCells('A1:F1');
   const titleCell = sheet.getCell('A1');
   titleCell.value = title;
   titleCell.alignment = { horizontal: 'center' };
@@ -450,12 +365,11 @@ function writeVariationsSheet(sheet, variations, title, headers) {
       row.getCell(2).value = item.designation;
       row.getCell(3).value = item.magasin;
       row.getCell(4).value = item.description;
-      row.getCell(5).value = item.produit;
-      row.getCell(6).value = item.variation;
-      row.getCell(7).value = item.qtyActuelle;
+      row.getCell(5).value = item.variation;
+      row.getCell(6).value = item.qtyActuelle;
 
       // Coloration selon quantité
-      const qtyCell = row.getCell(7);
+      const qtyCell = row.getCell(6);
       if (item.qtyActuelle <= 5) {
         qtyCell.fill = {
           type: 'pattern',
@@ -471,7 +385,7 @@ function writeVariationsSheet(sheet, variations, title, headers) {
       }
     });
   } else {
-    sheet.mergeCells(`A3:${lastCol}3`);
+    sheet.mergeCells('A3:F3');
     const cell = sheet.getCell('A3');
     cell.value = 'Aucune variation pour cette période';
     cell.alignment = { horizontal: 'center' };
@@ -486,7 +400,7 @@ function writeVariationsSheet(sheet, variations, title, headers) {
 }
 
 function addNoDataMessage(sheet, message, dateContext) {
-  sheet.mergeCells('A1:G1');
+  sheet.mergeCells('A1:F1');
   const cell = sheet.getCell('A1');
   cell.value = message;
   cell.alignment = { horizontal: 'center' };
@@ -597,3 +511,4 @@ function isValidDate(dateStr) {
 }
 
 module.exports = { processStockTracking };
+	

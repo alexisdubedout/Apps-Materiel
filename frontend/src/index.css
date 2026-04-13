@@ -2,12 +2,222 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Warm scrollbar */
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(168, 145, 120, 0.3);
+    border-radius: 99px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(168, 145, 120, 0.5);
+  }
+  .dark ::-webkit-scrollbar-thumb {
+    background: rgba(100, 116, 139, 0.2);
+  }
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: rgba(100, 116, 139, 0.35);
+  }
+}
+
+@layer components {
+  /* Skeleton loader pulse bar */
+  .skeleton-line {
+    @apply h-3 rounded bg-surface-200 dark:bg-surface-700 animate-skeleton;
+  }
+  .skeleton-line-sm {
+    @apply h-2.5 rounded bg-surface-200 dark:bg-surface-700 animate-skeleton;
+  }
+}
+
+/* ─── Ambient floating orbs ─── */
+.ambient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.35;
+  pointer-events: none;
+  will-change: transform;
+}
+.dark .ambient-orb {
+  opacity: 0.12;
+  filter: blur(100px);
+}
+.ambient-orb--1 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(13, 148, 136, 0.5), transparent 70%);
+  animation: orbFloat1 25s ease-in-out infinite;
+}
+.ambient-orb--2 {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(217, 119, 6, 0.35), transparent 70%);
+  animation: orbFloat2 30s ease-in-out infinite;
+}
+.ambient-orb--3 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(244, 63, 94, 0.25), transparent 70%);
+  animation: orbFloat3 22s ease-in-out infinite;
+}
+
+@keyframes orbFloat1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(80px, -60px) scale(1.1); }
+  50% { transform: translate(-40px, 40px) scale(0.95); }
+  75% { transform: translate(60px, 80px) scale(1.05); }
+}
+@keyframes orbFloat2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-70px, 50px) scale(1.08); }
+  66% { transform: translate(50px, -80px) scale(0.92); }
+}
+@keyframes orbFloat3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  20% { transform: translate(60px, 40px) scale(1.1); }
+  40% { transform: translate(-50px, -30px) scale(0.95); }
+  60% { transform: translate(30px, -70px) scale(1.05); }
+  80% { transform: translate(-40px, 60px) scale(0.98); }
+}
+
+/* ─── Gradient text utility ─── */
+.text-gradient-warm {
+  background: linear-gradient(135deg, #0d9488 0%, #0891b2 40%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.dark .text-gradient-warm {
+  background: linear-gradient(135deg, #2dd4bf 0%, #22d3ee 40%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Card glow on hover ─── */
+.card-glow {
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-glow::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+  pointer-events: none;
+}
+.card-glow:hover::before {
+  opacity: 1;
+}
+.card-glow--teal::before {
+  background: radial-gradient(ellipse at 50% 80%, rgba(13, 148, 136, 0.15), transparent 60%);
+  box-shadow: 0 8px 40px -12px rgba(13, 148, 136, 0.2);
+}
+.card-glow--emerald::before {
+  background: radial-gradient(ellipse at 50% 80%, rgba(16, 185, 129, 0.15), transparent 60%);
+  box-shadow: 0 8px 40px -12px rgba(16, 185, 129, 0.2);
+}
+.card-glow--amber::before {
+  background: radial-gradient(ellipse at 50% 80%, rgba(217, 119, 6, 0.15), transparent 60%);
+  box-shadow: 0 8px 40px -12px rgba(217, 119, 6, 0.2);
+}
+.card-glow--rose::before {
+  background: radial-gradient(ellipse at 50% 80%, rgba(244, 63, 94, 0.15), transparent 60%);
+  box-shadow: 0 8px 40px -12px rgba(244, 63, 94, 0.2);
+}
+.dark .card-glow--teal::before {
+  background: radial-gradient(ellipse at 50% 80%, rgba(13, 148, 136, 0.08), transparent 60%);
+  box-shadow: 0 8px 40px -12px rgba(13, 148, 136, 0.12);
+}
+.dark .card-glow--emerald::before {
+  background: radial-gradient(ellipse at 50% 80%, rgba(16, 185, 129, 0.08), transparent 60%);
+  box-shadow: 0 8px 40px -12px rgba(16, 185, 129, 0.12);
+}
+.dark .card-glow--amber::before {
+  background: radial-gradient(ellipse at 50% 80%, rgba(217, 119, 6, 0.08), transparent 60%);
+  box-shadow: 0 8px 40px -12px rgba(217, 119, 6, 0.12);
+}
+.dark .card-glow--rose::before {
+  background: radial-gradient(ellipse at 50% 80%, rgba(244, 63, 94, 0.08), transparent 60%);
+  box-shadow: 0 8px 40px -12px rgba(244, 63, 94, 0.12);
+}
+
+/* ─── Logo pulse ─── */
+.logo-glow {
+  animation: logoGlow 3s ease-in-out infinite;
+}
+@keyframes logoGlow {
+  0%, 100% { box-shadow: 0 4px 20px -4px rgba(13, 148, 136, 0.3); }
+  50% { box-shadow: 0 4px 30px -2px rgba(13, 148, 136, 0.5); }
+}
+
+/* Grid layout overrides */
+.react-grid-item.react-grid-placeholder {
+  background: rgba(13, 148, 136, 0.06) !important;
+  border: 2px dashed rgba(13, 148, 136, 0.2) !important;
+  border-radius: 8px !important;
+  opacity: 1 !important;
+}
+.react-grid-item > .react-resizable-handle::after {
+  border-color: rgba(168, 145, 120, 0.3) !important;
+}
+.dark .react-grid-item > .react-resizable-handle::after {
+  border-color: rgba(100, 116, 139, 0.15) !important;
+}
+
+/* ─── Dot grid background ─── */
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(168, 145, 120, 0.18) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+.dark .dot-grid {
+  background-image: radial-gradient(circle, rgba(100, 116, 139, 0.1) 1px, transparent 1px);
+}
+
+/* ─── Shimmer for progress bar ─── */
+@keyframes shimmer {
+  0% { transform: translateX(-150%); opacity: 0; }
+  40% { opacity: 1; }
+  100% { transform: translateX(250%); opacity: 0; }
+}
+.animate-shimmer {
+  animation: shimmer 1.8s ease-in-out infinite;
+}
+
+/* ─── Page transition ─── */
+@keyframes pageIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.page-in {
+  animation: pageIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* ─── Ping animation for status dot ─── */
+@keyframes ping {
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+.animate-ping {
+  animation: ping 1.2s cubic-bezier(0, 0, 0.2, 1) infinite;
 }

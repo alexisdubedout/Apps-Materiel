@@ -1,0 +1,4508 @@
+{
+  "1": {
+    "description": "Station E/R Aviles CERD(ESPAGNE)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "6": {
+    "description": "Station Radar SSR As Pontes",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "14": {
+    "description": "Station Radar SSR / CERD Boulogne - Vaudringhem",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "15": {
+    "description": "Station Radar SSR / CERD Grand-Ballon",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "16": {
+    "description": "Station E/R Trigny CED",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "17": {
+    "description": "Station E/R Trigny CRD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "18": {
+    "description": "Station Radar SSR Chaumont - Cirfontaines",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "19": {
+    "description": "Station Radar SSR Paris-Nord Coubron",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "20": {
+    "description": "Station Radar SSR Brest - Lhoperet",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "21": {
+    "description": "Station Radar SSR Quimper St Goazec",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "22": {
+    "description": "Station Radar SSR / CERD Grasse - Le Haut-Montet",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "23": {
+    "description": "Station Radar SSR / CERD Montpellier - Les Plans",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "25": {
+    "description": "Station E/R Sainte Baume CRD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "26": {
+    "description": "Station Radar SSR Figari",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "27": {
+    "description": "Station Radar SSR Grenoble - Four",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "28": {
+    "description": "Station Radar SSR Mont-Ventoux - Bedoin",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "46": {
+    "description": "Station Radar SSR / CERD Clermont-Ferrand - Pierre Sur Haute",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "63": {
+    "description": "Station NAV-ER ROANNE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "64": {
+    "description": "Station NAV-ER THIERS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "65": {
+    "description": "Station NAV-ER VIENNE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "66": {
+    "description": "Station Radar primaire de Lyon Saint-Exupéry",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "67": {
+    "description": "Station Radar SSR Auch Lias",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "68": {
+    "description": "Station Radar SSR Biarritz Arzamendi",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "69": {
+    "description": "Station Radar SSR Bordeaux Lestiac",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "70": {
+    "description": "Station Radar SSR Limoges - Monts de Blond",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "71": {
+    "description": "Station Radar SSR Roche-sur-Yon Saint-Michel",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "72": {
+    "description": "Station E/R Amboise - Le Buisson - Feuillet Sauvigny CERD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "74": {
+    "description": "Station E/R Bordeaux le Haillan CED",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "77": {
+    "description": "Station E/R Saint Jean D'Illac CED",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "79": {
+    "description": "Station E/R Sarlat Campagnac CERD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "86": {
+    "description": "Station NAV-ER BIARRITZ",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "88": {
+    "description": "Station NAV-ER COGNAC",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "89": {
+    "description": "Station NAV-ER LA CHATRE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "91": {
+    "description": "Station NAV-ER SAUVETERRE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "92": {
+    "description": "Station NAV-ER TARBES OSSUN",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "94": {
+    "description": "Station E/R Dieppe CERD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "95": {
+    "description": "Station E/R Etampes/Champcueil CED",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "97": {
+    "description": "Station E/R Saint-Quentin Ribemont CERD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "103": {
+    "description": "Station NAV-ER ABBEVILLE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "105": {
+    "description": "Station NAV-ER BOULOGNE SUR MER",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "106": {
+    "description": "Station NAV-ER BOURSONNE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "107": {
+    "description": "Station NAV-ER BRAY SUR SEINE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "108": {
+    "description": "Station NAV-ER CAMBRAI",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "109": {
+    "description": "Station NAV-ER CHARTRES",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "110": {
+    "description": "Station NAV-ER CHATEAUDUN",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "111": {
+    "description": "Station NAV-ER CHATILLON",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "112": {
+    "description": "Station NAV-ER COULOMMIERS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "113": {
+    "description": "Station NAV-ER CREIL",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "114": {
+    "description": "Station NAV-ER DIEPPE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "115": {
+    "description": "Station NAV-ER EPERNON",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "117": {
+    "description": "Station NAV-ER MELUN",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "118": {
+    "description": "Station NAV-ER MONTDIDIER",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "119": {
+    "description": "Station NAV-ER PITHIVIERS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "121": {
+    "description": "Station NAV-ER RAMBOUILLET",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "122": {
+    "description": "Station NAV-ER REIMS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "123": {
+    "description": "Station Nav-ER / CERD Troyes",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "124": {
+    "description": "Station Radar PSR / SSR Strasbourg",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "125": {
+    "description": "Station E/R Dijon Montfrique CERD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "126": {
+    "description": "Station E/R Louvigny CERD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "127": {
+    "description": "Station E/R Nancy Bratte CERD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "128": {
+    "description": "Station E/R Saint-Saulge CERD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "129": {
+    "description": "Balise NDB MOULINS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Balise NDB"
+  },
+  "132": {
+    "description": "Station NAV-ER AUTUN",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "133": {
+    "description": "Station NAV-ER DIJON",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "135": {
+    "description": "Station NAV-ER GROSTENQUIN",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "136": {
+    "description": "Station NAV-ER LUXEUIL",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "137": {
+    "description": "Station NAV-ER MONTMEDY",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "138": {
+    "description": "Station NAV-ER MOULINS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "140": {
+    "description": "Station NAV-ER NEVERS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "141": {
+    "description": "Station NAV-ER ROLAMPONT",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "143": {
+    "description": "Station NAV-ER STRASBOURG",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "144": {
+    "description": "Station Radar PSR Bâle-Mullhouse Blotzheim",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "164": {
+    "description": "Station Radar SSR / CERD Nevers - Le Télégraphe",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "165": {
+    "description": "Station Radar SSR / CERD Tours - Monthodon",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "166": {
+    "description": "Station Radar SSR Avranches - Gathemo",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "167": {
+    "description": "Station Radar SSR Paris-Sud Palaiseau",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "168": {
+    "description": "Station Radar SSR Paris-Sud Saclay",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "169": {
+    "description": "Station Nav-ER / CERD Tarbes Lahitte Lembeye",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "170": {
+    "description": "Station Radar PSR / SSR / CED Toulouse - Caillougris",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "171": {
+    "description": "Station E/R Col Del Tap Montagne Noire CERD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "172": {
+    "description": "Station E/R Limoges Cognac la Forêt CERD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "173": {
+    "description": "Station E/R Pic du Midi CERD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "174": {
+    "description": "Balise NDB AGEN",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Balise NDB"
+  },
+  "175": {
+    "description": "Balise NDB BRIVE/SOUILLAC",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Balise NDB"
+  },
+  "176": {
+    "description": "Station NAV-ER AGEN",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "177": {
+    "description": "Station NAV-ER GAILLAC",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "178": {
+    "description": "Station NAV-ER LIMOGES",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "180": {
+    "description": "Station Radar PSR / SSR Nice - Côte d'Azur",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "181": {
+    "description": "Station E/R Ajaccio la Punta CERD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "186": {
+    "description": "Station E/R Nice Mont Leuze CRD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "195": {
+    "description": "Station NAV-ER AJACCIO",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "197": {
+    "description": "Station NAV-ER CAGNES SUR MER",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "198": {
+    "description": "Station NAV-ER CANNES TANNERON",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "200": {
+    "description": "Station NAV-ER LE LUC",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "201": {
+    "description": "Station NAV-ER NICE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "202": {
+    "description": "Station NAV-ER SAINT TROPEZ",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "204": {
+    "description": "Station NAV-ER / CERD Montélimar",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "205": {
+    "description": "Station Radar PSR / SSR / CERD Marseille - Vitrolles",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "206": {
+    "description": "Station E/R Lure CERD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "214": {
+    "description": "Station NAV-ER AVIGNON",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "215": {
+    "description": "Station NAV-ER DIGNE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "217": {
+    "description": "Station NAV-ER MARSEILLE MIRABEAU",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "218": {
+    "description": "Station NAV-ER MARTIGUES",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "219": {
+    "description": "Station NAV-ER MENDE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "257": {
+    "description": "Balise NDB AUBENAS/VAL LANAS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Balise NDB"
+  },
+  "267": {
+    "description": "Balise NDB CAHORS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Balise NDB"
+  },
+  "273": {
+    "description": "Balise NDB CHOLET/LE PONTREAU",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Balise NDB"
+  },
+  "347": {
+    "description": "Station NAV-ER LIFOU",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "349": {
+    "description": "Station NAV-ER SAINT PIERRE PIERREFONDS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "365": {
+    "description": "Balise NDB ETAIN",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Balise NDB"
+  },
+  "381": {
+    "description": "Station Radar SSR Nantes ISR2 La Roche Servière",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "400": {
+    "description": "Station E/R Cherbourg Flottemanville CERD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "401": {
+    "description": "Station E/R Hanvec Labeur Dirimeur CERD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "403": {
+    "description": "Station E/R Redon Séverac CERD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "404": {
+    "description": "Station E/R Tanville CERD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "411": {
+    "description": "Station NAV-ER ANGERS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "413": {
+    "description": "Station NAV-ER DEAUVILLE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "415": {
+    "description": "Station NAV-ER L'AIGLE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "416": {
+    "description": "Station NAV-ER MONTS D'ARREE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "420": {
+    "description": "Station NAV-ER ROUEN",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "421": {
+    "description": "Station E/R Le Réaltor CERD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "608": {
+    "description": "Station NAV-ER CHAMBERY",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "677": {
+    "description": "Station E/R Lille-Lesquin CERD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "693": {
+    "description": "Station Radar SMR Orly VIGIE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "694": {
+    "description": "Station Radar SMR Roissy Nord",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "695": {
+    "description": "Station Radar SMR Roissy Sud",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "696": {
+    "description": "Station Radar SMR Roissy TWR Nord",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "697": {
+    "description": "Station Radar SMR Roissy TWR Centrale",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "705": {
+    "description": "Station E/R Aléria CERD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Station E/R"
+  },
+  "706": {
+    "description": "SMR Roissy spare",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "707": {
+    "description": "SMR Orly spare",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "337-001": {
+    "description": "Tours Val de Loire",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "609-001": {
+    "description": "RADAR MONOPULSE TAHITI",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Autres"
+  },
+  "ADRASEC38-001": {
+    "description": "ADRASEC 38 / FNRASEC",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "ADRASEC"
+  },
+  "ADRASEC74-001": {
+    "description": "ADRASEC 74 / FNRASEC",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "ADRASEC"
+  },
+  "ADRASECIDF-001": {
+    "description": "ADRASSEC Ile de France",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "ADRASEC"
+  },
+  "BEA-001": {
+    "description": "Bureau Enquête et Analyse",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "BEA"
+  },
+  "CANJUERS-001": {
+    "description": "Canjuers - Deport IRL",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "CCMAR MED-001": {
+    "description": "CCMAR MED Toulon/Saint Mandrier",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Autres"
+  },
+  "CESNAC-001": {
+    "description": "CESNAC",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "CESNAC"
+  },
+  "CLOG AA-001": {
+    "description": "Centre Logistique Armée de l'Air",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "CLOG AT-001": {
+    "description": "Centre Logistique de l'Armée de Terre",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "CLOG GN-001": {
+    "description": "Centre Logistique Gendarmerie National GP de soutien",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "CLOG MN-001": {
+    "description": "Centre Logistique de la Marine Nationale",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "COMSOFT-001": {
+    "description": "COMSOFT Gmbh",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "A vérifier",
+    "detail": "A vérifier"
+  },
+  "CRNA-E-001": {
+    "description": "CRNA-E",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "CRNA"
+  },
+  "CRNA-N-001": {
+    "description": "CRNA-N",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "CRNA"
+  },
+  "CRNA-O-001": {
+    "description": "CRNA-O",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "CRNA"
+  },
+  "CRNA-SE-001": {
+    "description": "CRNA-SE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "CRNA"
+  },
+  "CRNA-SO-001": {
+    "description": "CRNA-SO",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "CRNA"
+  },
+  "DNUM-SITE-001": {
+    "description": "DGAC/SG/DNUM - PRINCE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Autres"
+  },
+  "DO-SITE-001": {
+    "description": "DGAC/DSNA/DO",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "DO"
+  },
+  "DOUANES33-001": {
+    "description": "Douanes de Bordeaux",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Douanes"
+  },
+  "DOUANES50-001": {
+    "description": "Douanes de Cherbourg-Octeville",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Douanes"
+  },
+  "DOUANES56-001": {
+    "description": "Douanes Française BAN LANN BIHOUE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Douanes"
+  },
+  "DOUANES83-001": {
+    "description": "Douanes de Saint Mandrier MANDRIER",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Douanes"
+  },
+  "DOUANES83HYA-001": {
+    "description": "Douanes HYERES AVION",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Douanes"
+  },
+  "DOUANES83HYH-001": {
+    "description": "Douanes HYERES HELICOPTERES",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Douanes"
+  },
+  "DOUANES972-001": {
+    "description": "Direction des Douanes de la Martinique",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Douanes"
+  },
+  "DSNA-001": {
+    "description": "Direction des Services de la Navigation Aérienne",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "A vérifier",
+    "detail": "A vérifier"
+  },
+  "DTI-003": {
+    "description": "Capteurs de surveillance (UCS)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-004": {
+    "description": "Capteurs de surveillance (UCSA)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-005": {
+    "description": "Capteurs de surveillance (UCSB)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-006": {
+    "description": "Capteurs de surveillance (UCSI)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-007": {
+    "description": "Capteurs de surveillance (UCSM)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-008": {
+    "description": "Capteurs de surveillance (UCSP)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-009": {
+    "description": "Capteurs de surveillance (UCSR)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-010": {
+    "description": "Capteurs de surveillance (UCSS)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-011": {
+    "description": "Capteurs de surveillance Support Transverse (UCST)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-012": {
+    "description": "Chaînes Horaire (UDS)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-013": {
+    "description": "Chaînes radio et téléphone (UCVC)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-031": {
+    "description": "COM Matériel pour traiter l'obsolescence (UCVO)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-032": {
+    "description": "Communication FH (UCVF)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-033": {
+    "description": "Contrôle en vol -Laboratoire (UCCL)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-034": {
+    "description": "Enregistreurs et exploitation (UASE)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-035": {
+    "description": "Goniomètres",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-036": {
+    "description": "Infrastructures et Génie Civil (UDG)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-037": {
+    "description": "Installation COM sites isolés (UCVI)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-038": {
+    "description": "Installations (UDI)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-039": {
+    "description": "IVD Outils (UDVO)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-040": {
+    "description": "IVD Support (UDVS)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-041": {
+    "description": "IVD Tests (UDVT)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-045": {
+    "description": "Matériel informatique (UDTI)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-046": {
+    "description": "Matériel informatique non préaffecté (UDTD)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock MCO potentiel",
+    "detail": "Stock MCO potentiel"
+  },
+  "DTI-047": {
+    "description": "Matériel non informatique (UDTE)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-048": {
+    "description": "Matériel transporté en transit temporaire (UTTT)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Autres",
+    "detail": "Matériel en transit temporaire"
+  },
+  "DTI-049": {
+    "description": "Matériels HS Logistique (UDMH)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Autres",
+    "detail": "Matériels HS"
+  },
+  "DTI-050": {
+    "description": "Moyen généraux, logistique site (USL)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-051": {
+    "description": "Moyens internes Log Opérationnelle (UDM)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-052": {
+    "description": "NAV (UCN)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-053": {
+    "description": "NAV (UCNA)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-054": {
+    "description": "NAV (UCNG)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-055": {
+    "description": "NAV (UCNI)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-056": {
+    "description": "NAV (UCNN)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-057": {
+    "description": "NAV (UCNO)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-058": {
+    "description": "NAV (UCNP)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-059": {
+    "description": "NAV DME en route et atterrissage (UCND)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-060": {
+    "description": "NAV Matériels pour le militaire (UCNMIL)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-061": {
+    "description": "NAV Mesures (UCNL)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-062": {
+    "description": "NAV Mesures (UCNX)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-063": {
+    "description": "NAV VOR classiques et Doppler (UCNV)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-064": {
+    "description": "Recherche et sauvetage (UDTR)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-066": {
+    "description": "Support Informatique (USI)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-067": {
+    "description": "Systèmes de radiocommunication (UCVS)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-068": {
+    "description": "Télécom réseaux",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-069": {
+    "description": "Télécom réseaux (UCI)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-070": {
+    "description": "Télécom réseaux (UCI_PRA)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-071": {
+    "description": "Télécom réseaux (UCIM)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-072": {
+    "description": "Télécom réseaux (UCIQ)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-073": {
+    "description": "Télécom réseaux (UCIS)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-075": {
+    "description": "Télécom réseaux Accès restreint (UCIRES)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-076": {
+    "description": "Télécom réseaux prêt",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-077": {
+    "description": "Matériel Informatique pour maintenance SDM (UDTM)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock MCO (UDTM)"
+  },
+  "DTI-078": {
+    "description": "Matériel informatique pour déploiement (UDTP)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-079": {
+    "description": "COM Vocales, Liaisons données Air-SOL (UCV)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-080": {
+    "description": "Matériels HS (UDMH)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Autres",
+    "detail": "Matériels HS"
+  },
+  "DTI-081": {
+    "description": "LOG (UDMH)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Autres",
+    "detail": "Réforme"
+  },
+  "DTI-082": {
+    "description": "DTI Athis",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Autres"
+  },
+  "DTI-083": {
+    "description": "Support Informatique STOCK TAMPON (USIT)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Autres"
+  },
+  "DTI-084": {
+    "description": "Emplacement de stockage général ES DTI",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock MCO (ES)"
+  },
+  "DTI-085": {
+    "description": "Fréquences et Servitudes (UCF)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-200": {
+    "description": "Emplacement de stockage ES DTI",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock MCO (ES)"
+  },
+  "DTI-201": {
+    "description": "Zone d'expédition",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Matériel en cours d'expédition"
+  },
+  "DTI-202": {
+    "description": "Zone de réception DTI",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Matériel en cours de réception"
+  },
+  "DTI-203": {
+    "description": "Matériels en réparation",
+    "type": "STOCKAGE",
+    "typeEmplacement": "En réparation",
+    "detail": "En réparation"
+  },
+  "DTI-204": {
+    "description": "Matériels remplacés par les réparateurs",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Autres"
+  },
+  "DTI-205": {
+    "description": "Emplacement de matériels réformés",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Autres",
+    "detail": "Réforme"
+  },
+  "DTI-206": {
+    "description": "Emplacement de matériels suspendus",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Autres"
+  },
+  "DTI-207": {
+    "description": "Emplacement pour réception des licences",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Autres"
+  },
+  "DTI-L-0151": {
+    "description": "DPS - Outils",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-A001": {
+    "description": "A001",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-A114": {
+    "description": "A114",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-A202": {
+    "description": "A202",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-A204": {
+    "description": "A204",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-A211": {
+    "description": "A211",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-A215": {
+    "description": "A215",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-A216": {
+    "description": "A216",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-A218": {
+    "description": "A218",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-A219": {
+    "description": "A219",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-B001": {
+    "description": "B001",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-B002": {
+    "description": "B002",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-B003": {
+    "description": "B003",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-B004": {
+    "description": "B004",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-B005": {
+    "description": "B005",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-B006": {
+    "description": "B006",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-B007": {
+    "description": "B007",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-B008": {
+    "description": "B008",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-B009": {
+    "description": "B009",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-B014": {
+    "description": "B014",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-B016": {
+    "description": "B016",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-B017": {
+    "description": "B017",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-B101": {
+    "description": "B101",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-B102": {
+    "description": "B102",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-B103": {
+    "description": "B103",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-C001": {
+    "description": "C001",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-C012": {
+    "description": "CUBE DATA CENTER - C012",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-C101": {
+    "description": "CUBE RESEAU ORTOLAN - C101",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-C102": {
+    "description": "CUBE - C102",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-COM-001": {
+    "description": "Communication DTI (UMC)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-CUBE-003": {
+    "description": "DPS - simulation (UAE)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-CUBE-004": {
+    "description": "Ilot DATALINK (UAED)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-CUBE-005": {
+    "description": "Ilot ERATO (UAEE)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-CUBE-007": {
+    "description": "Ilot LDB-SYSBAS (UAEL)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-CUBE-008": {
+    "description": "Ilot ODS (UAEO)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-CUBE-009": {
+    "description": "Ilot PLATES FORMES DE SIMULATION (UAES)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-CUBE-016": {
+    "description": "Ilot surveillance (UASS)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-CUBE-017": {
+    "description": "Ilot STC (UAST)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-CUBE-019": {
+    "description": "Ilot traitement des vols (UAT)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-CUBE-021": {
+    "description": "Ilot COFLIGHT (UATC)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-CUBE-027": {
+    "description": "Ilot STPV (UATP)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-CUBE-028": {
+    "description": "Ilot STIP (UATS)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-CUBE-095": {
+    "description": "Salle expérimentations ER (UEE)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-CUBE-163": {
+    "description": "Ilot 4FLIGHT",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-CUBES-030": {
+    "description": "Ilot analyse des vols (UATV)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E001": {
+    "description": "Labo produits ATM CESNAC",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E001A": {
+    "description": "Labo produits ATM CESNAC - Ilot Gestion des flux (UATF)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E001B": {
+    "description": "Labo produits ATM CESNAC - Ilot information aéronautique (UATI)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E001C": {
+    "description": "Labo produits ATM CESNAC - Ilot MAESTRO et CIGALE (UATM)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E001D": {
+    "description": "Labo produits ATM CESNAC - Ilot SEPIA",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E001F": {
+    "description": "Ilot STAN STANWEB RDVC",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E012": {
+    "description": "Labo de test réseaux LAN",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E013": {
+    "description": "Mission environnement - E013 (UTME)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E014": {
+    "description": "MISSION ENVIRONNEMENT - E014 (UTME)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E016": {
+    "description": "Labo 4-FLIGHT Région Parisienne",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E112": {
+    "description": "E112",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E115": {
+    "description": "Labo SI-CYBER",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E116": {
+    "description": "E116",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E118": {
+    "description": "E118",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E125": {
+    "description": "E125",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E201": {
+    "description": "E201",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E202": {
+    "description": "E202",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E206": {
+    "description": "E206",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E208": {
+    "description": "E208",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E210": {
+    "description": "E210",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E212": {
+    "description": "E212",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E216": {
+    "description": "E216",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E218": {
+    "description": "E218",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E218B": {
+    "description": "E218B",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E219": {
+    "description": "E219",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E222": {
+    "description": "E222",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-E230": {
+    "description": "E230",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-GRT-152": {
+    "description": "Gestion de Ressources de Tests (GRT)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-HBIS-0070": {
+    "description": "Ilot infrastructures et Génie Civil (UDG)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-HBIS-0071": {
+    "description": "Ilot installations (UDI)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-HBIS-159": {
+    "description": "Ilot SYSAT G1",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-HBIS-160": {
+    "description": "Ilot SYSAT G2",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-HBIS-171": {
+    "description": "Ilot SYSAT G1 - IATS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-HBIS-173": {
+    "description": "Réseaux (HBIS)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-HUB-INNOVATIONA": {
+    "description": "Environnement Etudes Expérimentations (URE)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-HUB-INNOVATIONB": {
+    "description": "Performance et Innovation des IHM (URI)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-IVD-083": {
+    "description": "Ilot IVD (UDV)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-IVD-084": {
+    "description": "Ilot évaluations et paramétrage (UDVE)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-IVD-085": {
+    "description": "Ilot IVD IHM (UDVI)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-IVD-086": {
+    "description": "Ilot outils IVD (UDVO)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-IVD-087": {
+    "description": "Ilot IVD SUPPORT (UDVS)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-IVD-088": {
+    "description": "Ilot IVD TESTS (UDVT)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K001": {
+    "description": "Labo CONTRÔLE EN VOL",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K001A": {
+    "description": "Labo contrôle en vol (UCC)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K001B": {
+    "description": "Labo contrôle en vol - Ilot opération aériennes (UCCC)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K001C": {
+    "description": "Labo contrôle en vol - Ilot études perspectives (UCCE)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K001D": {
+    "description": "Labo contrôle en vol - Ilot laboratoire du contrôle en vol (UCCL)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K011": {
+    "description": "Labo VCS K011",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K012": {
+    "description": "K012",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K036": {
+    "description": "K036",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K038": {
+    "description": "K038",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K066": {
+    "description": "K066",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K106": {
+    "description": "K106",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K111": {
+    "description": "K111",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K115": {
+    "description": "K115",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K117": {
+    "description": "K117",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K120": {
+    "description": "K120",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K124": {
+    "description": "K124",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K130": {
+    "description": "K130",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K131": {
+    "description": "K131",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K132": {
+    "description": "K132",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K133": {
+    "description": "K133",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K135": {
+    "description": "K135",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K136": {
+    "description": "K136",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K139": {
+    "description": "K139",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K140": {
+    "description": "K140",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K154": {
+    "description": "K154",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K156": {
+    "description": "K156",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K162": {
+    "description": "K162",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K166": {
+    "description": "K166",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K167": {
+    "description": "K167",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K173": {
+    "description": "K173",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K201": {
+    "description": "K201",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K204": {
+    "description": "K204",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K206": {
+    "description": "K206",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K208": {
+    "description": "K208",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K209": {
+    "description": "K209",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K213": {
+    "description": "K213",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K217": {
+    "description": "K217",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K218": {
+    "description": "K218",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K219": {
+    "description": "K219",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K220": {
+    "description": "K220",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K221": {
+    "description": "K221",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K222": {
+    "description": "K222",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K224": {
+    "description": "K224",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K232": {
+    "description": "K232",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K236": {
+    "description": "K236",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K251": {
+    "description": "K251",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K254": {
+    "description": "K254",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K256": {
+    "description": "K256",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K257": {
+    "description": "K257",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K259": {
+    "description": "K259",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K261": {
+    "description": "K261",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K267": {
+    "description": "K267",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K268": {
+    "description": "K268",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K269B": {
+    "description": "K269B",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K271": {
+    "description": "K271",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-K273": {
+    "description": "K273",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-LOG-072": {
+    "description": "LOG moyens logistiques (UDM)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock projet"
+  },
+  "DTI-L-LOG-073": {
+    "description": "LOG échange standard (UDME)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock MCO (ES)"
+  },
+  "DTI-L-LOG-074": {
+    "description": "LOG stockage (UDMS)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Autres"
+  },
+  "DTI-L-LOG-097": {
+    "description": "LOG matériel hors stock (UDMO)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "NE PAS COMPTABILISER",
+    "detail": "UDMO"
+  },
+  "DTI-L-LOG-138": {
+    "description": "Matériel transporté en transit temporaire (UTT)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Matériel en transit temporaire"
+  },
+  "DTI-L-LOG-146": {
+    "description": "LOG consommables ES",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Stock DTI",
+    "detail": "Stock MCO (ES)"
+  },
+  "DTI-L-M035": {
+    "description": "M035",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M039": {
+    "description": "M039",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M050": {
+    "description": "M050",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M051": {
+    "description": "M051",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M056": {
+    "description": "M056",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M058": {
+    "description": "M058",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M059": {
+    "description": "M059",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M063": {
+    "description": "M063",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M066": {
+    "description": "M066",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M069": {
+    "description": "M069",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M071": {
+    "description": "M071",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M077": {
+    "description": "M077",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M103": {
+    "description": "M103",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M105": {
+    "description": "M105",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M108": {
+    "description": "M108",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M111": {
+    "description": "M111",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M116": {
+    "description": "M116",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M119": {
+    "description": "M119",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M124": {
+    "description": "M124",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M133": {
+    "description": "M133",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M137": {
+    "description": "M137",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M140": {
+    "description": "M140",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M151": {
+    "description": "M151",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M166": {
+    "description": "M166",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M166B": {
+    "description": "M166B",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M205": {
+    "description": "M205",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M208": {
+    "description": "M208",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M210": {
+    "description": "M210",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M215": {
+    "description": "M215",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M218": {
+    "description": "M218",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M221": {
+    "description": "M221",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M232": {
+    "description": "M232",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M236": {
+    "description": "M236",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M237": {
+    "description": "M237",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M256": {
+    "description": "M256",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M265": {
+    "description": "M265",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-M273": {
+    "description": "M273",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N001": {
+    "description": "Labo Air-Sol",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N002": {
+    "description": "Labo Air-Sol - GONIO - FH",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N003": {
+    "description": "Labo navigation",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N003A": {
+    "description": "Labo navigation (UCN)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N003B": {
+    "description": "Labo navigation- AREOPAGE (UCNA)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N003C": {
+    "description": "Labo navigation - DME (UCND)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N003D": {
+    "description": "Labo navigation - GBAS (UCNG)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N003E": {
+    "description": "Labo navigation - ILS (UCNI)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N003F": {
+    "description": "Labo navigation - pool appareil de mesures (UCNI)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N003G": {
+    "description": "Labo navigation - MLS (UCNM)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N003H": {
+    "description": "Labo navigation - outil de maintenance (UCNO)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N003I": {
+    "description": "Labo navigation - PANNEAUX d'ETAT CAT 4 (UCNP)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N003J": {
+    "description": "Labo navigation - VOR (UCNV)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N003K": {
+    "description": "Labo navigation - appareils de mesures en stand by (UCNX)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N005": {
+    "description": "Labo systèmes-approches N005",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N008": {
+    "description": "Labo VIGIE / LDAS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N009": {
+    "description": "Labo DECOR / ISATIS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N009A": {
+    "description": "Labo DECOR / ISATIS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N011": {
+    "description": "N011",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N012": {
+    "description": "Labo RADARS N012 / N013 / N014",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N012A": {
+    "description": "Labo CDS N012 / N013 / N014 - CDS (UCS)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N012B": {
+    "description": "Labo CDS N012 / N013 / N014 - ASMGCS (UCSA)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N012C": {
+    "description": "Labo CDS N012 / N013 / N014 - ADS-B",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N012D": {
+    "description": "Labo CDS N012 / N013 / N014 - MODE S",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N012E": {
+    "description": "Labo CDS N012 / N013 / N014 - RADAR PRIMAIRE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N012F": {
+    "description": "Labo CDS N012 / N013 / N014 - RADAR MODE S ET MONOPULSE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N012G": {
+    "description": "Labo CDS N012 / N013 / N014 - SUPPORT TRANSVERSE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N015": {
+    "description": "Labo RESEAU TELECOM",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N101": {
+    "description": "N101",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N102": {
+    "description": "N102",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N103": {
+    "description": "N103",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N105": {
+    "description": "N105",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N106": {
+    "description": "N106",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N107": {
+    "description": "N107",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N108": {
+    "description": "N108",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N110": {
+    "description": "N110",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N111": {
+    "description": "N111",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N113": {
+    "description": "N113",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N118": {
+    "description": "N118",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N123": {
+    "description": "N123",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N124": {
+    "description": "N124",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N128": {
+    "description": "N128",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N201": {
+    "description": "N201",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N202": {
+    "description": "N202",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-N205": {
+    "description": "N205",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-O001": {
+    "description": "Labo systèmes Outre-Mer ATM",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-O003": {
+    "description": "Labo SOC",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-O004": {
+    "description": "Labo réseaux – liaisons asynchrones et MSG AERO",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-O005": {
+    "description": "Labo de tests et de services réseaux SEC",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-O006": {
+    "description": "Labo VCS O006",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-O009": {
+    "description": "Labo réseaux RSTNA",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-O011": {
+    "description": "Labo réseaux RDTI et de tests réseaux",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-O012": {
+    "description": "O012",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-O013": {
+    "description": "Labo systèmes-approches O013",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-O013A": {
+    "description": "Labo systèmes-approches O013",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-O013B": {
+    "description": "Labo systèmes-approches O013 - Ilot COSNET",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-O102": {
+    "description": "O102",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-O120": {
+    "description": "O120",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-O207": {
+    "description": "O207",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-RESEAU-001": {
+    "description": "Labo équipements de commutation et routage (UCIQ)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-RZ05": {
+    "description": "RZ05",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-S002": {
+    "description": "Labo enregistreurs et QS (UASE)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-S002B": {
+    "description": "Labo supervision S002B",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-S005": {
+    "description": "Labo S005 (baies)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-S007": {
+    "description": "Labo SALTO",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-S008": {
+    "description": "S008",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-S118": {
+    "description": "S118",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-S120": {
+    "description": "S120",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-S124": {
+    "description": "S124",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-SIR-124": {
+    "description": "Département administration (USA)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-SIR-125": {
+    "description": "Finances - comptabilité (USAC)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-SIR-127": {
+    "description": "Ressources Humaines (USAH)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-SIR-132": {
+    "description": "Département affaire générale, logistique SITE (USL)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-SIR-133": {
+    "description": "Maintenance et entretien du site (USLE)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-SIR-134": {
+    "description": "Atelier d'impression (USLI)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-SIR-135": {
+    "description": "Logistique et moyens (USLL)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-SIR-136": {
+    "description": "Mission, déplacement, changement résidence (USLM)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-SUP INFORMATIQUE": {
+    "description": "Support informatique DTI (USI)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-SUPV-010": {
+    "description": "Labo supervision surveillance qualité (UAS)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-SUPV-011": {
+    "description": "Labo supervisions ATM (UASA)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-SUPV-012": {
+    "description": "Labo supervisions CNS et autres (UASC)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-U013": {
+    "description": "U013",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-L-U014": {
+    "description": "Labo configuration chaîne horaire",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Labo DTI"
+  },
+  "DTI-SITE-001": {
+    "description": "MATERIELS HS LOGISTIQUE(UDMH)",
+    "type": "STOCKAGE",
+    "typeEmplacement": "Autres",
+    "detail": "Matériels HS"
+  },
+  "EAALAT-001": {
+    "description": "EAALAT Dax",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "EGJJ-001": {
+    "description": "Jersey",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Hors DGAC"
+  },
+  "EINN-001": {
+    "description": "Shannon",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Hors DGAC"
+  },
+  "ENAC-SITE-001": {
+    "description": "ENAC SITE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "ENAC"
+  },
+  "ENAIRE-SITE-001": {
+    "description": "ENAIRE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Autres"
+  },
+  "EUROCONTROLF-001": {
+    "description": "EUROCONTROL BRETIGNY",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Autres"
+  },
+  "FMCZ-001": {
+    "description": "Mayotte - Marcel Henry",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "FMEE-001": {
+    "description": "La Réunion-Roland-Garros",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "FOUR-500-001": {
+    "description": "ZODIAC AREOSPACE SERVICES Europe",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-501-001": {
+    "description": "THALES COMMUNICATIONS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-502-001": {
+    "description": "ITE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-504-001": {
+    "description": "METEO FRANCE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-505-001": {
+    "description": "NAVCONTROL",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-506-001": {
+    "description": "BARCOVIEW TEXEN",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-507-001": {
+    "description": "VERSYS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-508-001": {
+    "description": "TERMA A / S",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-509-001": {
+    "description": "THALES ATM GmbH",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-510-001": {
+    "description": "ALS ELECTRONIQUE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-511-001": {
+    "description": "ATOS 51114",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-512-001": {
+    "description": "DAPA SYSTEMES 00337",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-513-001": {
+    "description": "FWD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-514-001": {
+    "description": "IELEC",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-515-001": {
+    "description": "IRTS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-516-001": {
+    "description": "ITE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-518-001": {
+    "description": "SCEDI",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-519-001": {
+    "description": "Shore Microsystems",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-520-001": {
+    "description": "THALES ATM",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-521-001": {
+    "description": "THALES-ELECTRA",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-522-001": {
+    "description": "THALES Melbourne",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-523-001": {
+    "description": "THALES RUNGIS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-524-001": {
+    "description": "EIFFIAGE ENERGIE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-525-001": {
+    "description": "THALES CERY",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-526-001": {
+    "description": "NEXTIRAONE FRANCE Plateforme de référence",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-527-001": {
+    "description": "Spare SLI-M chez EURILOGIC TECHNOLOGIES SA",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-528-001": {
+    "description": "Réalisation Etude Equipements Electriques",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-529-001": {
+    "description": "Westermo Data Communications SARL",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-530-001": {
+    "description": "ACOEM",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-531-001": {
+    "description": "EOLANE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-532-001": {
+    "description": "ISCO (System Intelligent Computer)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-554-001": {
+    "description": "TELERAD SA",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-555-001": {
+    "description": "THALES AIR SYSTEMS S.A.",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-556-001": {
+    "description": "THALES ELECTRON DEVICES",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-557-001": {
+    "description": "EGISAVIA SA",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-558-001": {
+    "description": "ASSYSTEM FRANCE SAS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-559-001": {
+    "description": "FREQUENTIS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-560-001": {
+    "description": "OCWS (Orange Connectivity and Workspace services)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-561-001": {
+    "description": "FONTANIE-TOULOUSE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-562-001": {
+    "description": "SOPRA COLOMIERS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-563-001": {
+    "description": "SAGEM DEFENSE SECURITE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-564-001": {
+    "description": "TRESCAL SA",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-565-001": {
+    "description": "SPIE SUD OUEST",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-566-001": {
+    "description": "INEO ENGINEERING AND SYSTEMS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-567-001": {
+    "description": "CAP GEMINI SUD (TECHNOLOGY SERVICES)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-568-001": {
+    "description": "THALES AIR SYSTEMS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-569-001": {
+    "description": "INTELEC",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-570-001": {
+    "description": "CAP GEMINI ERNST & YOUNG",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-571-001": {
+    "description": "DALLARD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-573-001": {
+    "description": "ROCKWELL COLLINS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-574-001": {
+    "description": "INEO ENGINEERING & SYSTEMS à Vélizy",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-575-001": {
+    "description": "CS TELECOM",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-576-001": {
+    "description": "HYDRO RENOVATION",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-577-001": {
+    "description": "INDRA Sistemas S.A.",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-578-001": {
+    "description": "ADACEL",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-579-001": {
+    "description": "OCTO TOULOUSE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-580-001": {
+    "description": "CEMG Aérosauvetage",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-581-001": {
+    "description": "POLYCONTACT",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-582-001": {
+    "description": "Thales SIX GTS France SAS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-583-001": {
+    "description": "CISCO NL",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-584-001": {
+    "description": "ALLENTIS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-585-001": {
+    "description": "ASPEN TELECOMS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-586-001": {
+    "description": "DELTA OMEGA",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-587-001": {
+    "description": "SAFRAN ELECTRONIX & DEFENSE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-588-001": {
+    "description": "KUBII SAS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-589-001": {
+    "description": "ELTEK POWER FRANCE SAS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-590-001": {
+    "description": "EES DYNAE Agence Sud-Ouest",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-591-001": {
+    "description": "ATELIERS DES GRAVES",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-592-001": {
+    "description": "DASSAULT AVIATION MERIGNAC",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-594-001": {
+    "description": "DISTRIMEDIA",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-595-001": {
+    "description": "WESTERN DIGITAL",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-596-001": {
+    "description": "BECHTLE DIRECT FRANCE / LIVRAISON",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-597-001": {
+    "description": "IMMERSION",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-598-001": {
+    "description": "IER SURESNES",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-599-001": {
+    "description": "BLACK BOX",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-600-001": {
+    "description": "SOCOMEC",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-601-001": {
+    "description": "THALES-Services Numériques",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-602-001": {
+    "description": "SFR Business",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-603-001": {
+    "description": "DICONEX",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-604-001": {
+    "description": "Rohde&Schwarz Allemagne",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-605-001": {
+    "description": "LEASAMETRIC",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-606-001": {
+    "description": "R-2PHB",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-607-001": {
+    "description": "ATEMATION – SYSCOM PROREP",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-608-001": {
+    "description": "NCS SYSTEMS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-609-001": {
+    "description": "THALES DEUTSCHLAND GMBH",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-610-001": {
+    "description": "PREHKEYTEC",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "FOUR-706-001": {
+    "description": "APEM SAS",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Stock fournisseur"
+  },
+  "GHSC CM-001": {
+    "description": "Groupement hélicoptères de la Sécurité Civile Centre de maintenance",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "IND-EGIS-001": {
+    "description": "EGIS AVIA",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "MOE"
+  },
+  "IND-OBIANE-001": {
+    "description": "OBIANE",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "MOE"
+  },
+  "IND-SII-001": {
+    "description": "SII",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "MOE"
+  },
+  "IND-SOGETI-001": {
+    "description": "SOGETI HIGH TECH",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "MOE"
+  },
+  "INDNES-001": {
+    "description": "CNES",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "MOE"
+  },
+  "INDTOS-SO-001": {
+    "description": "Atos Origin - Agence Sud-Ouest",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "MOE"
+  },
+  "LFAC-001": {
+    "description": "Calais-Dunkerque",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFAQ-001": {
+    "description": "Albert-Bray",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFAT-001": {
+    "description": "Le Touquet-Paris-Plage",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFAV-001": {
+    "description": "Valenciennes - Denain",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFBA-001": {
+    "description": "Agen-La Garenne",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFBC-001": {
+    "description": "BA 120 Cazaux",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFBD-001": {
+    "description": "Bordeaux-Mérignac",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFBE-001": {
+    "description": "Bergerac-Roumanière",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFBG-001": {
+    "description": "BA 709 Cognac - Châteaubernard",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFBH-001": {
+    "description": "La Rochelle - Ile-de-Ré",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFBI-001": {
+    "description": "Poitiers-Biard",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFBK-001": {
+    "description": "Montluçon-Guéret",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFBL-001": {
+    "description": "Limoges-Bellegarde",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFBM-001": {
+    "description": "BA 118 Mont de Marsan (avec DCC)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFBO-001": {
+    "description": "Toulouse-Blagnac",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFBP-001": {
+    "description": "Pau Pyrénées",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFBR-001": {
+    "description": "Muret-L'Herm",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFBS-001": {
+    "description": "Biscarrosse-Parentis",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFBT-001": {
+    "description": "Tarbes-Lourdes - Pyrénées",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFBU-001": {
+    "description": "Angoulême - Cognac",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFBX-001": {
+    "description": "Périgueux-Bassillac",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFBZ-001": {
+    "description": "Biarritz-Bayonnenglet",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFCI-001": {
+    "description": "Albi - Le Sequestre",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFCK-001": {
+    "description": "Castres-Mazamet",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFCL-001": {
+    "description": "Toulouse-Lasbordes",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFCR-001": {
+    "description": "Rodez-Marcillac",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFDN-001": {
+    "description": "Rochefort - Charente-Maritime",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFGA-001": {
+    "description": "Colmar-Houssen",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFGB-001": {
+    "description": "Mulhouse-Habsheim",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFGJ-001": {
+    "description": "Dole-Tavaux",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFHP-001": {
+    "description": "Le Puy - Loudes",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFJL-001": {
+    "description": "Metz-Nancy-Lorraine",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFJR-001": {
+    "description": "Angers-Loire",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFKB-001": {
+    "description": "Bastia-Poretta",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFKC-001": {
+    "description": "Calvi-Sainte-Catherine",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFKF-001": {
+    "description": "Figari-Sud - Corse",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFKJ-001": {
+    "description": "Ajaccio-Napoléon Bonaparte",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFKS-001": {
+    "description": "BA 126 Solenzara",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFLA-001": {
+    "description": "Auxerre-Branches",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFLB-001": {
+    "description": "Chambéry - Aix-les-Bains",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFLC-001": {
+    "description": "Clermont-Ferrand - Auvergne",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFLD-001": {
+    "description": "Bourges",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFLG-001": {
+    "description": "Grenoble-Le Versoud",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFLL-001": {
+    "description": "Lyon - Saint-Exupéry",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFLM-001": {
+    "description": "Macon - Charnay",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFLN-001": {
+    "description": "Saint-Yan",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFLP-001": {
+    "description": "Annecy-Meythet",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFLS-001": {
+    "description": "Grenoble-Isère",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFLU-001": {
+    "description": "Valencehabeuil",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFLV-001": {
+    "description": "Vichyharmeil",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFLW-001": {
+    "description": "Aurillac",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFLX-001": {
+    "description": "Châteauroux-Déols",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFLY-001": {
+    "description": "Lyon-Bron",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFMA-001": {
+    "description": "Aix-Les Milles",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFMC-001": {
+    "description": "EALAT Le Luc-Le Cannet",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFMD-001": {
+    "description": "Cannes-Mandelieu",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFMH-001": {
+    "description": "Saint-Etienne - Bouthéon",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFMI-001": {
+    "description": "BA 125 Istres-Le Tubé (avec CEV)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFMK-001": {
+    "description": "Carcassonne-Salvaza",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFML-001": {
+    "description": "Marseille-Provence",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFMN-001": {
+    "description": "Nice Côte d'Azur",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFMO-001": {
+    "description": "BA 115 Orange - Caritat",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFMP-001": {
+    "description": "Perpignan-Rivesaltes",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFMS-001": {
+    "description": "Alès Cévennes",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFMT-001": {
+    "description": "Montpellier-Méditerranée",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFMU-001": {
+    "description": "Béziers-Vias",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFMV-001": {
+    "description": "Avignon - Caumont",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFMY-001": {
+    "description": "BA 701 Salon de Provence",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFNB-001": {
+    "description": "Mende-Brenoux",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFOA-001": {
+    "description": "BA 702 Avord",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFOB-001": {
+    "description": "Beauvais-Tillé",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFOC-001": {
+    "description": "BA 279 Châteaudun",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFOE-001": {
+    "description": "BA 105 Evreux-Fauville",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFOH-001": {
+    "description": "Le Havre-Octeville",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFOJ-001": {
+    "description": "BA 123 Orléans Bricy",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFOK-001": {
+    "description": "Châlons-Vatry",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFOP-001": {
+    "description": "Rouen-Vallée de Seine",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFOT-001": {
+    "description": "BA 705 CCM Cinq Mars La Pile",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFOX-001": {
+    "description": "Etampes-Mondésir",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFPB-001": {
+    "description": "Paris-Le Bourget",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFPC-001": {
+    "description": "BA 110 Creil",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFPE-001": {
+    "description": "Meaux-Esbly",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFPG-001": {
+    "description": "Paris - Charles-De-Gaulle",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFPI-001": {
+    "description": "Paris-Issy-Les-Moulineaux",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFPL-001": {
+    "description": "Lognes-Emerainville",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFPM-001": {
+    "description": "Melun-Villaroche",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFPN-001": {
+    "description": "Toussus-le-Noble",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFPO-001": {
+    "description": "Paris-Orly",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFPT-001": {
+    "description": "Pontoise - Cormeilles-en-Vexin",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFPV-001": {
+    "description": "BA 107 Vélizy-Villacoublay",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFPZ-001": {
+    "description": "Saint-Cyr-L'Ecole",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFQB-001": {
+    "description": "Troyes-Barberey",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFQE-001": {
+    "description": "RHC Etain",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFQG-001": {
+    "description": "Nevers-Fourchambault",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFQP-001": {
+    "description": "RHC / ALAT Phalsbourg",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFQQ-001": {
+    "description": "Lille-Lesquin",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFQT-001": {
+    "description": "Mervillealonne",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFRB-001": {
+    "description": "Brest-Bretagne",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFRC-001": {
+    "description": "Cherbourg-Maupertus",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFRD-001": {
+    "description": "Dinard - Pleurtuit - Saint-Malo",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFRG-001": {
+    "description": "Deauville - Saint-Gatien",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFRH-001": {
+    "description": "BAN Lorient Lann-Bihoué",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFRI-001": {
+    "description": "La Roche-sur-Yon - Les Ajoncs",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFRJ-001": {
+    "description": "BAN Landivisiau",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFRK-001": {
+    "description": "Caen-Carpiquet",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFRL-001": {
+    "description": "BAN Lanvéoc-Poulmic",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFRM-001": {
+    "description": "Le Mansrnage",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFRN-001": {
+    "description": "Rennes - Saint-Jacques",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFRO-001": {
+    "description": "Lannion",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFRQ-001": {
+    "description": "Quimper-Pluguffan",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFRS-001": {
+    "description": "Nantes-Atlantique",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFRT-001": {
+    "description": "Saint-Brieuc - Armor",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFRV-001": {
+    "description": "Vannes-Meucon",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFRZ-001": {
+    "description": "Saint-Nazaire - Montoir",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFSB-001": {
+    "description": "Bâle-Mulhouse",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFSD-001": {
+    "description": "Dijon-Bourgogne (MRBFC)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFSG-001": {
+    "description": "Epinal-Mirecourt",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFSI-001": {
+    "description": "BA 113 Saint-Dizier-Robinson",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFSL-001": {
+    "description": "Brive-Souillac",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFSN-001": {
+    "description": "Nancy-Essey",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFSO-001": {
+    "description": "BA 133 Nancy Ochey",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFSR-001": {
+    "description": "BA 112 Reims Champagne",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFST-001": {
+    "description": "Strasbourg-Entzheim",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFSX-001": {
+    "description": "BA 116 Luxeuil-Saint Sauveur",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFTF-001": {
+    "description": "BAN EPAN Cuers-Pierrefeu",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFTH-001": {
+    "description": "Toulon-Hyères",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFTHD-001": {
+    "description": "BAN Hyères Le palyvestre",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "LFTW-001": {
+    "description": "Nîmes-Garons",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFVP-001": {
+    "description": "Saint-Pierre - Pointe-Blanche",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "LFXV-001": {
+    "description": "BA 942 Lyon-Mont Verdun (avec DCC)",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "NLWW-001": {
+    "description": "Wallis Hihifo",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "NTAA-001": {
+    "description": "Tahiti-Faa'a",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "NTTB-001": {
+    "description": "Bora-Bora - Motu-Mute",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "NTTG-001": {
+    "description": "Rangiroa",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "NTTH-001": {
+    "description": "Huahine",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "NTTM-001": {
+    "description": "Moorea-Temae",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "NTTR-001": {
+    "description": "Raiatea-Uturoa",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "NWWM-001": {
+    "description": "Nouméa Magenta",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "NWWW-001": {
+    "description": "Nouméa - La Tontouta",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "POED-001": {
+    "description": "Paris Orly Equipement Distant",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "RHC PAU-001": {
+    "description": "RHC Pau",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Militaires"
+  },
+  "SIA-001": {
+    "description": "SIA",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "SIA"
+  },
+  "SITE-P-0255-001": {
+    "description": "JRCC TAHITI",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "SOCA-001": {
+    "description": "Cayenne-Félix Eboué",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "STAC-001": {
+    "description": "Service Technique de l'Aviation Civile",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "STAC"
+  },
+  "TFFF-001": {
+    "description": "Martinique-Aimé Césaire",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "TFFR-001": {
+    "description": "Pointe-à-Pitre - Le Raizet",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Site opérationnel",
+    "detail": "Approches"
+  },
+  "TLPC-001": {
+    "description": "George F. L. Charles Airport",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Hors DGAC"
+  },
+  "TLPL-001": {
+    "description": "Hewanorra International Airport",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Hors DGAC"
+  },
+  "XSWS-001": {
+    "description": "SWISS AIR Navigation Service LTD",
+    "type": "OPERATIONNEL",
+    "typeEmplacement": "Autres",
+    "detail": "Hors DGAC"
+  }
+}

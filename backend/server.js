@@ -1,214 +1,91 @@
 const express = require('express');
 const cors = require('cors');
-const multer = require('multer');
-const path = require('path');
-const fs = require('fs').promises;
+const rateLimit = require('express-rate-limit');
+const config = require('./config');
 
-// Import des processeurs
-const { processStockTracking } = require('./processors/stock-tracking');
+const authRoutes = require('./routes/auth');
+const mappingRoutes = require('./routes/mapping');
+const tdbRoutes = require('./routes/tdb');
+const processRoutes = require('./routes/process');
+
+const { authenticateToken, rejectClient } = require('./middleware/auth');
+const { initDatabase, initHistoryTable } = require('./services/database');
+const { initNotesTable, getNote, saveNote } = require('./services/notes');
+const { startCacheRefresh } = require('./services/tdb-cache');
+
+// ─── App setup ─────────────────────────────────────────────────────────────
 
 const app = express();
-const PORT = process.env.PORT || 10000;
-const FRONTEND_URL = process.env.FRONTEND_URL || 'http://localhost:5173';
+app.set('trust proxy', 1);
 
-// Configuration CORS
+const FRONTEND_URL = process.env.VITE_API_URL || 'http://localhost:5173';
+
 app.use(cors({
-  origin: [
-    FRONTEND_URL,
-    'http://localhost:5173',
-    'http://localhost:3000'
-  ],
-  credentials: true
+  origin: [FRONTEND_URL, ...config.CORS_ORIGINS],
+  credentials: true,
 }));
 
 app.use(express.json());
 
-// Configuration Multer pour upload de fichiers
-const upload = multer({
-  dest: 'uploads/',
-  limits: { fileSize: 50 * 1024 * 1024 }, // 50MB
-  fileFilter: (req, file, cb) => {
-    const ext = path.extname(file.originalname).toLowerCase();
-    if (ext === '.xlsx' || ext === '.xls') {
-      cb(null, true);
-    } else {
-      cb(new Error('Seuls les fichiers Excel (.xlsx, .xls) sont acceptés'));
-    }
-  }
+// Rate limiting
+const apiLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+  message: { detail: 'Trop de requêtes, veuillez réessayer dans 15 minutes' },
+  standardHeaders: true,
+  legacyHeaders: false,
 });
+app.use('/api/', apiLimiter);
 
-// ===================================
-// ROUTES
-// ===================================
+// ─── Routes ────────────────────────────────────────────────────────────────
 
-app.get('/', (req, res) => {
-  res.json({
-    message: 'Excel Processing API - Node.js',
-    version: '2.0.0',
-    status: 'running',
-    endpoints: {
-      treatments: '/api/treatments',
-      process: '/api/process/{treatment_id}'
-    }
-  });
-});
+app.get('/', (req, res) => res.json({ message: 'Excel Processing API - Node.js', version: '2.0.0', status: 'running' }));
 
-// Liste des traitements disponibles
-app.get('/api/treatments', (req, res) => {
-  res.json({
-    treatments: [
-      {
-        id: 'stock-tracking',
-        name: 'Suivi des Stocks',
-        description: 'Mise à jour automatique du suivi mensuel et semestriel des stocks',
-        status: 'active',
-        files: [
-          { id: 'tracking', label: 'Fichier de suivi', accept: '.xlsx,.xls' },
-          { id: 'export', label: "Fichier d'export", accept: '.xlsx,.xls' }
-        ],
-        params: [
-          { id: 'export_date', label: "Date d'export", type: 'date', placeholder: '' }
-        ]
-      },
-      {
-        id: 'sales-analysis',
-        name: 'Analyse des Ventes',
-        description: 'Génération de rapports et analyses de ventes mensuelles',
-        status: 'coming_soon',
-        files: [
-          { id: 'sales', label: 'Fichier des ventes', accept: '.xlsx,.xls' }
-        ],
-        params: [
-          { id: 'period', label: 'Période', type: 'text', placeholder: 'Ex: Q1 2024' }
-        ]
-      },
-      {
-        id: 'data-merge',
-        name: 'Fusion de Données',
-        description: 'Consolidation de plusieurs fichiers Excel en un seul',
-        status: 'coming_soon',
-        files: [
-          { id: 'file1', label: 'Premier fichier', accept: '.xlsx,.xls' },
-          { id: 'file2', label: 'Deuxième fichier', accept: '.xlsx,.xls' }
-        ],
-        params: []
-      }
-    ]
-  });
-});
+app.use('/api/auth', authRoutes);
+app.use('/api/mapping', authenticateToken, rejectClient, mappingRoutes);
+app.use('/api/tdb', tdbRoutes);
+app.use('/api/process', processRoutes);
+app.use('/api/treatments', (req, res) => res.redirect('/api/process'));
 
-// Traitement des fichiers
-app.post('/api/process/:treatmentId', upload.any(), async (req, res) => {
-  let outputPath = null;
-  
+// ─── Notes (legacy /api/notes endpoints) ───────────────────────────────────
+
+app.get('/api/notes', authenticateToken, async (req, res) => {
   try {
-    const { treatmentId } = req.params;
-    const files = req.files;
-    const params = JSON.parse(req.body.params || '{}');
-
-    console.log('🚀 Traitement demandé:', treatmentId);
-    console.log('📁 Fichiers reçus:', files.map(f => f.originalname));
-    console.log('⚙️ Paramètres:', params);
-
-    // Vérifier que le traitement existe et est actif
-    if (treatmentId !== 'stock-tracking') {
-      return res.status(400).json({
-        detail: 'Ce traitement est en cours de développement. Seul "Suivi des Stocks" est disponible pour le moment.'
-      });
-    }
-
-    // Mapper les fichiers uploadés par ID
-    const fileMap = {};
-    files.forEach(file => {
-      // Le nom du champ est "file_tracking", "file_export", etc.
-      const fileId = file.fieldname.replace('file_', '');
-      fileMap[fileId] = file.path;
-    });
-
-    console.log('📋 Mapping des fichiers:', fileMap);
-
-    // Vérifier que tous les fichiers requis sont présents
-    const requiredFiles = ['tracking', 'export'];
-    for (const fileId of requiredFiles) {
-      if (!fileMap[fileId]) {
-        throw new Error(`Fichier manquant: ${fileId}`);
-      }
-    }
-
-    // Vérifier les paramètres requis
-    if (!params.export_date) {
-      throw new Error('Paramètre manquant: export_date');
-    }
-
-    // Exécuter le traitement
-    outputPath = await processStockTracking(
-      fileMap.tracking,
-      fileMap.export,
-      params.export_date
-    );
-
-    console.log('✅ Traitement terminé, fichier:', outputPath);
-
-    // Générer le nom du fichier résultat
-    const resultFilename = `resultat_stock_tracking_${params.export_date.replace(/\//g, '-')}.xlsx`;
-
-    // Envoyer le fichier
-    res.download(outputPath, resultFilename, async (err) => {
-      // Nettoyer les fichiers temporaires après envoi
-      try {
-        await cleanupFiles([...files.map(f => f.path), outputPath]);
-      } catch (cleanupErr) {
-        console.error('Erreur nettoyage:', cleanupErr);
-      }
-
-      if (err) {
-        console.error('Erreur envoi fichier:', err);
-      }
-    });
-
+    const note = await getNote();
+    res.json(note || { content: '', updated_by: null, updated_at: null });
   } catch (error) {
-    console.error('❌ Erreur traitement:', error);
-    
-    // Nettoyer les fichiers en cas d'erreur
-    if (req.files) {
-      try {
-        await cleanupFiles(req.files.map(f => f.path));
-        if (outputPath) await fs.unlink(outputPath);
-      } catch (cleanupErr) {
-        console.error('Erreur nettoyage après erreur:', cleanupErr);
-      }
-    }
-
-    res.status(500).json({
-      detail: error.message || 'Erreur lors du traitement'
-    });
+    res.status(500).json({ error: 'Erreur lors de la récupération de la note' });
   }
 });
 
-// ===================================
-// UTILITAIRES
-// ===================================
-
-async function cleanupFiles(filePaths) {
-  for (const filePath of filePaths) {
-    try {
-      await fs.unlink(filePath);
-      console.log('🗑️ Fichier supprimé:', filePath);
-    } catch (err) {
-      if (err.code !== 'ENOENT') {
-        console.error('Erreur suppression:', filePath, err);
-      }
-    }
+app.post('/api/notes', authenticateToken, async (req, res) => {
+  try {
+    const { content } = req.body;
+    const username = req.user ? `${req.user.firstname} ${req.user.lastname}` : 'Anonyme';
+    const updatedNote = await saveNote(content, username);
+    res.json(updatedNote);
+  } catch (error) {
+    res.status(500).json({ error: 'Erreur lors de la sauvegarde de la note' });
   }
+});
+
+// ─── Init DB & start ───────────────────────────────────────────────────────
+
+async function start() {
+  await initDatabase();
+  await initHistoryTable();
+  await initNotesTable();
+  startCacheRefresh();
+
+  const PORT = config.PORT;
+  app.listen(PORT, () => {
+    console.log('🚀 Serveur Node.js démarré');
+    console.log(`📡 Port: ${PORT}`);
+    console.log('✅ Prêt à traiter des fichiers Excel');
+  });
 }
 
-// ===================================
-// DÉMARRAGE
-// ===================================
-
-app.listen(PORT, () => {
-  console.log('🚀 Serveur Node.js démarré');
-  console.log(`📡 Port: ${PORT}`);
-  console.log(`🌍 Frontend autorisé: ${FRONTEND_URL}`);
-  console.log(`✅ Prêt à traiter des fichiers Excel`);
+start().catch(err => {
+  console.error('❌ Erreur démarrage:', err);
+  process.exit(1);
 });
